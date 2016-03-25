@@ -1,15 +1,14 @@
 language: node_js
 node_js:
-  - "5"
-  - "4"
-  - "4.0"
-
-after_success: 'npm run coverage'
-
+- '5'
+- '4'
+- '4.0'
+after_success: npm run coverage
 deploy:
   provider: npm
   email: jaroslav.kubicek@gmail.com
   api_key:
-    secure: GS7HhDoDSI3oh7CMmekXAr8LtVSlQNpT/z50RuAxt4AO8YE8h9uL2jOwmPR+nCk5NXF+wZFF9KPW5fddv9NzTix/IRCgVmiNI80ZCTDU18IqnkM+T+ExC1LvMJME7pYkDduE4Wk/1vhPe4CI4meiX+CViiEG9x5GBs1eBCqdto/EqV7YreBGtsyR0+ju5VxitJ8SlTcQ0BCD6/Xcr5u1APfrHl0GMY1NogvuNIwXPD9rdk2mBT5M+w9vXeD3wkGTdmmR+/7ZrjPh8qdnGCqxNVwQURRgTnh+WlsyJcfkDVU6FWwRaN8xINavZmcrYMWy2KqhxYzCt9OVCWwZWvTzDyoTY6NnjBAq4hPB/Le3E6tD4gOUy3wNBjcpgB3fylHlwcIgZhoONZx8btktdpcdN4BtBvaUC5APyXUT1YDDF2WeYwtzIuUVbakyIza3lE42/qizHy99UiwskfrCOvPg0isBc9kAoWNVvoVP1EJ6JzvKuC0xIo0y86XClfFR9SjFXzz/75PUMg6zPsIytRbmTJepZljfp9TSOKV6mSWZ7qnwn1Lr6uj/EiTp7s6yCTdhEjc4lMu7B9Jh9lu2J+5pih840BABHWivKtEyvJlBYR4vclNiA/iwOx/yG275wVThYgncefMkEKivHYSZjVZcLIDeBEt3wDLvtl87LztkCHs=
+    secure: TWgKo+5jFp5tnmuFKrx6fVnnXce557nbv//rIK5juUML9Q7RdP2I+BYOzIcklt5fWmpdgwLORFXrkL3qUys9gtQ7LzjAFG1ikljU3sE/lQlLxMy7dUQT1R1FbjMtwPhMnIO1qK/e7taHxSdm9ynvbz8S6lgjpeOdupFcUe6e7YoLI+NPx+aivb8nxdJowb5oxSGuceqvuYa4p8wGbrAosZtIia7zjxoPmPekBEQ6eVXpEB5/qgLfKsmFZYEaBusL+ZZC7uvr0K8iepjRciVAZtm4lAEtOi1JY4VV0dsK+3fOMIKczIflFwixQfi8P+/SZLQlqSsGw9GQ+0qpKs5Sr4a4DP6b5zrPkqNybYqFif+MjfQo0ZzdZ7Dz+pHJsy50zfAX//HghhHIeBlb6ZopK/MCwMaB5cMgmwWJZXu9ui+DAAMPj9DZ5VZooOLNOZ3UWP/3A6pweZtmAPljs/DKuJF5WHXCGywRXyzW8zscwdWv0osQeuT4eKtkEpcdvs+tHOIWYeTc0u6LEGXDit2Wjb55iMd+AMis3oQC0qt5Cd3ifw+dJ7acnd2dRH1US8uBAv+aBn/0W6aeR2v64SqcQ2HLDZXGQU2ep2dwdtJDtAqb5UTsyhwjzWk1oiuDNvrC9nJN4/P8cP2yqUV4Irhk5SvQFY4HCiNZpEcGfst0SrI=
   on:
     tags: true
+    repo: jaroslav-kubicek/spawn-generator
