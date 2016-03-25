@@ -1,0 +1,31 @@
+{
+  "name": "spawn-generator",
+  "version": "0.0.1",
+  "description": "Write the synchronous-like code with promises and generators.",
+  "main": "spawnGenerator.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaroslav-kubicek/spawn-generator.git"
+  },
+  "keywords": [
+    "generators",
+    "promises"
+  ],
+  "author": {
+    "name": "Jaroslav Kubíček",
+    "email": "jaroslav.kubicek@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaroslav-kubicek/spawn-generator/issues"
+  },
+  "homepage": "https://github.com/jaroslav-kubicek/spawn-generator#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5"
+  }
+}
