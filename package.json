@@ -4,7 +4,8 @@
   "description": "Write the synchronous-like code with promises and generators.",
   "main": "spawnGenerator.js",
   "scripts": {
-    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test"
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test",
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,12 @@
     "url": "https://github.com/jaroslav-kubicek/spawn-generator/issues"
   },
   "homepage": "https://github.com/jaroslav-kubicek/spawn-generator#readme",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5"
   }
