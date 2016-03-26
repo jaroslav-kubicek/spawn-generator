@@ -6,7 +6,7 @@ Write the synchronous-like code with promises and generators
 
 ## Example
 
-```
+```js
 let spawnGenerator = require('spawn-generator');
 
 let generatorFunction = function*(fruit) {
