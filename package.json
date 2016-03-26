@@ -4,8 +4,9 @@
   "description": "Write the synchronous-like code with promises and generators.",
   "main": "spawnGenerator.js",
   "scripts": {
-    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test",
-    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "lint": "./node_modules/.bin/eslint $(find . -name '*.js' -path './lib/*' -o -path './test/*')",
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.9",
+    "eslint": "^2.5.1",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5"
   }
