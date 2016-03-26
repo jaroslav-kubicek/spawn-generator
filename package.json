@@ -5,7 +5,7 @@
   "main": "spawnGenerator.js",
   "scripts": {
     "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "lint": "./node_modules/.bin/eslint $(find . -name '*.js' -path './lib/*' -o -path './test/*')",
+    "lint": "./node_modules/.bin/eslint $(find . -name '*.js' -path './spawnGenerator.js' -o -path './test/*')",
     "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha -- ./test"
   },
   "repository": {
